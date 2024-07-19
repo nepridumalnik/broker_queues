@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package main;
+
+option go_package = "./message";
+
+message Message {
+    string Data = 1;
+    string ResponseChannel = 2;
+}
