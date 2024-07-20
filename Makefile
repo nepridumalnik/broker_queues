@@ -1,9 +1,9 @@
-all: proto
+all: go
 
-go:
+go: protoc
 	go build ./...
 
-proto:
+protoc:
 	protoc --proto_path=. --go_out=./generated proto/message.proto
 
 clean:
